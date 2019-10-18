@@ -1,0 +1,33 @@
+{
+  "name": "feedback-animation",
+  "version": "1.0.0",
+  "description": "Gives feedback to button clicks etc. Think Material style ripple effects.",
+  "main": "feedback-animation.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intothesource/feedback-animation.git"
+  },
+  "keywords": [
+    "ripple",
+    "feedback",
+    "animation",
+    "feedback-animation",
+    "material"
+  ],
+  "author": "Ramon Valk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/intothesource/feedback-animation/issues"
+  },
+  "homepage": "https://github.com/intothesource/feedback-animation#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.5.1"
+  }
+}
