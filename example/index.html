@@ -3,6 +3,9 @@
     <head>
         <script type="module"
             src="../feedback-animation.js"></script>
+            <link rel="stylesheet"
+            type="text/css"
+            href="../feedback-animation.css">
         <link rel="stylesheet"
             type="text/css"
             href="./index.css">
@@ -85,9 +88,10 @@
             </div>
         </div>
         <div class="container">
-          <button data-its-feedback-animation='ripple' data-its-feedback-color="green">Test button</button>
-          <p data-its-feedback-animation>Test text</p>
-          <div data-its-feedback-animation='ripple' style="width: 200px; height: 80px; background: lightslategray;">Test div</div>
+          <button class="material-button" data-its-feedback-animation='ripple' data-its-feedback-color="#81c784"><span style="color: #4caf50; text-transform: uppercase; font-weight: 700;">Test button</span></button>
+          <p data-its-feedback-animation></p>
+          <div data-its-feedback-animation='ripple' class="grey-div" data-its-feedback-color="slategray"><span>Test div binnen</span>Test div buiten</div>
+          <div data-its-feedback-animation='ripple' style="width: 1400px; height: 600px; background: darkmagenta;">Test div</div>
         </div>
     </body>
 </html>

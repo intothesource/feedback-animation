@@ -1,58 +1,57 @@
 html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  
-  #logo {
-    width: 100px;
-  }
-  
-  .header {
-    padding-top: 1rem;
-  }
-  
-  .container {
-    padding: 0 1rem;
-  }
+  box-sizing: border-box;
+}
 
-  .ripple {
-    width: 2px;
-    height: 2px;
-    position: absolute;
-    border-radius: 50%;
-    background-color: var(--color, rgba(255, 255, 255, 0.5));
-    animation: rippleEffect 0.5s ease-in-out;
-  }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-  [data-its-feedback-animation] {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  @keyframes rippleEffect {
-    0% {
-      transform: scale(1);
-    } 
-    100% {
-      opacity: 0;
-      transform: scale(var(--scale));
-    }
-  }
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#logo {
+  width: 100px;
+}
+
+.header {
+  padding-top: 1rem;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.material-button {
+border: none;
+border-radius: 5px;
+outline: 0;
+width: 80px;
+height: 44px;
+transition: background 300ms ease-in-out;
+}
+
+.material-button:hover {
+  background: #c8e6c9;
+}
+
+.material-button:focus {
+  background: #a5d6a7
+}
+
+.grey-div {
+  width: 200px;
+  height: 80px;
+  background: lightslategray;
+}
   
