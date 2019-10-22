@@ -1,14 +1,20 @@
 {
-  "name": "feedback-animation",
+  "name": "@intothesource/feedback-animation",
   "version": "1.0.0",
   "description": "Gives feedback to button clicks etc. Think Material style ripple effects.",
+  "private": false,
   "main": "feedback-animation.js",
+  "module": "feedback-animation.js",
   "directories": {
     "example": "example"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "np"
   },
+  "files": [
+    "feedback-animation.js",
+    "feedback-animation.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/intothesource/feedback-animation.git"

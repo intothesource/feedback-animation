@@ -32,7 +32,7 @@ body {
   padding: 0 1rem;
 }
 
-.material-button {
+.example-button {
 border: none;
 border-radius: 5px;
 outline: 0;
@@ -41,17 +41,26 @@ height: 44px;
 transition: background 300ms ease-in-out;
 }
 
-.material-button:hover {
+.example-button:hover {
   background: #c8e6c9;
 }
 
-.material-button:focus {
+.example-button:focus {
   background: #a5d6a7
 }
 
-.grey-div {
-  width: 200px;
-  height: 80px;
-  background: lightslategray;
-}
+.example-div {
+  border-radius: 5px;
+  width: 800px;
+  height: 300px;
+  transition: background 300ms ease-in-out;
+  }
+  
+  .example-div:hover {
+    background: #c8e6c9;
+  }
+  
+  .example-div:focus {
+    background: #a5d6a7
+  }
   

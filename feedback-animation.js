@@ -32,7 +32,9 @@ const animateElementRipple = (element, color) => {
                 ripple.parentNode.removeChild(ripple);
             } else {
                 const mouseUpListener = document.onmouseup = () => {
-                    ripple && ripple.parentNode.removeChild(ripple);
+                    if (ripple) {
+                        ripple && ripple.parentNode.removeChild(ripple);
+                    }
                     element.removeEventListener('mouseup', mouseUpListener);
                 }
             }
