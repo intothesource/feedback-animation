@@ -1,4 +1,4 @@
-# @intothesource/snackbar
+# @intothesource/feedback-animation
 
 Gives feedback to button clicks etc. Think Material style ripple effects.
 
