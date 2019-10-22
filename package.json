@@ -1,6 +1,6 @@
 {
   "name": "@intothesource/feedback-animation",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Gives feedback to button clicks etc. Think Material style ripple effects.",
   "private": false,
   "main": "feedback-animation.js",
