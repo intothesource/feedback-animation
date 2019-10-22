@@ -45,14 +45,17 @@ const animateElementRipple = (element, color) => {
     }
 }
 
-if (elements) {
-    elements.forEach(element => {
-        switch (element.dataset.itsFeedbackAnimation) {
-            case 'ripple':
-                animateElementRipple(element, element.dataset.itsFeedbackColor);
-            default:
-                return;
-        }
-    });
+const feedbackAnimation = () => {
+    if (elements) {
+        elements.forEach(element => {
+            switch (element.dataset.itsFeedbackAnimation) {
+                case 'ripple':
+                    animateElementRipple(element, element.dataset.itsFeedbackColor);
+                default:
+                    return;
+            }
+        });
+    }
 }
 
+export default feedbackAnimation;
