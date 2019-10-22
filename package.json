@@ -12,9 +12,12 @@
     "release": "np",
     "test": "./node_modules/.bin/cypress open"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "feedback-animation.js",
-    "feedback-animation.js"
+    "feedback-animation.css"
   ],
   "repository": {
     "type": "git",
