@@ -1,4 +1,4 @@
-import { DATA_ELEMENT } from './constants.js';
+import { DATA_ELEMENT, DATA_RIPPLE_SIZE } from './constants.js';
 
 const elements = document.querySelectorAll(`[${DATA_ELEMENT}]`);
 
@@ -6,7 +6,6 @@ const animateElementRipple = (element, color) => {
     element.onmousedown = e => {
         // Check if pressing the primary button
         if (e.button === 0) {
-            const increaseRippleSize = 1.2;
             let mouseUp = false;
             const mouseUpListener = document.onmouseup = () => {
                 mouseUp = true;
@@ -15,7 +14,7 @@ const animateElementRipple = (element, color) => {
 
             const x = e.pageX - element.offsetLeft;
             const y = e.pageY - element.offsetTop;
-            const w = element.offsetWidth * increaseRippleSize;
+            const w = element.offsetWidth * DATA_RIPPLE_SIZE;
 
             const ripple = document.createElement('span');
 
