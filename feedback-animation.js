@@ -11,8 +11,12 @@ const animateElementRipple = (element, color) => {
                 element.removeEventListener('mouseup', mouseUpListener);
             }
 
-            const x = e.pageX - element.offsetLeft;
-            const y = e.pageY - element.offsetTop;
+            const tempBoundingRect = element.getBoundingClientRect();
+            const x = e.pageX - tempBoundingRect.left;
+            const y = e.pageY - tempBoundingRect.top;
+
+            // const x = e.pageX - element.offsetLeft;
+            // const y = e.pageY - element.offsetTop;
             const w = element.offsetWidth * DATA_RIPPLE_SIZE;
 
             const ripple = document.createElement('span');
