@@ -1,11 +1,10 @@
-import { DATA_ELEMENT, DATA_RIPPLE_SIZE } from './constants.js';
-
-const elements = document.querySelectorAll(`[${DATA_ELEMENT}]`);
+import { DATA_RIPPLE_SIZE } from './constants.js';
 
 const animateElementRipple = (element, color) => {
-    element.onmousedown = e => {
+    element.addEventListener('mousedown', e => {
         // Check if pressing the primary button
         if (e.button === 0) {
+
             let mouseUp = false;
             const mouseUpListener = document.onmouseup = () => {
                 mouseUp = true;
@@ -42,19 +41,17 @@ const animateElementRipple = (element, color) => {
                 }
             }, 300);
         }
-    }
+    });
 }
 
-const feedbackAnimation = () => {
-    if (elements) {
-        elements.forEach(element => {
-            switch (element.dataset.itsFeedbackAnimation) {
-                case 'ripple':
-                    animateElementRipple(element, element.dataset.itsFeedbackColor);
-                default:
-                    return;
-            }
-        });
+const feedbackAnimation = (element) => {
+    if (element) {
+        switch (element.dataset.itsFeedbackAnimation) {
+            case 'ripple':
+                animateElementRipple(element, element.dataset.itsFeedbackColor);
+            default:
+                return;
+        }
     }
 }
 
