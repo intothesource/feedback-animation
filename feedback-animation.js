@@ -49,11 +49,20 @@ const animateElementRipple = (element, color) => {
     });
 }
 
+const attributeChangeObserver = (animationFunction, element, color) => {
+    const observer = new MutationObserver();
+    observer.observe(element, {
+        attributes: true
+    });
+
+    
+}
+
 const feedbackAnimation = (element) => {
     if (element) {
         switch (element.dataset.itsFeedbackAnimation) {
             case 'ripple':
-                animateElementRipple(element, element.dataset.itsFeedbackColor);
+                attributeChangeObserver(animateElementRipple, element, element.dataset.itsFeedbackColor);
             default:
                 return;
         }
