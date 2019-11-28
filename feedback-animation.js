@@ -27,6 +27,7 @@ const animateElementRipple = (element, color) => {
             ripple.style.setProperty('--scale', w);
 
             if (element.dataset.itsFeedbackColor) {
+                console.log(element.dataset.itsFeedbackColor);
                 ripple.style.setProperty('--color', color);
             }
 
