@@ -18,7 +18,8 @@
   "files": [
     "feedback-animation.js",
     "feedback-animation.css",
-    "constants.js"
+    "constants.js",
+    "ripple.js"
   ],
   "repository": {
     "type": "git",
