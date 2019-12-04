@@ -4,6 +4,9 @@ import rippleAnimation from './ripple.js';
 const attributeChangeObserver = (animationFunction, element, color) => {
     const callback = e => {
         console.log(e);
+        animationFunction.stop();
+        animationFunction.init();
+        animationFunction.start();
     }
     const observer = new MutationObserver(callback);
     observer.observe(element, {
